@@ -23,12 +23,12 @@ Effective transit administration relies on a granular, data-backed understanding
 
 ---
 
-## Data Pipeline, Feature Engineering, & Cleaning Footprints
+## Feature Engineering, & Cleaning Footprints
 
 ### 1. High-Fidelity Data Cleaning
-During the initial data audit, critical missing records were identified across ticket fares, passenger count and trip lengths. To preserve sample sizes without introducing massive statistical variance, a **systematic median imputation strategy** was deployed. Missing  value visualisation shown below.
+During the initial data audit, critical missing records were identified across ticket fares, passenger counts and trip lengths. To preserve sample sizes without introducing massive statistical variance, a **systematic median imputation strategy** was deployed. The Missing  value visualisation is shown below.
 
-![]()
+!['Distribution of Missing Value']('images/MissingvalueEDA.png')
 
 ** Fig1: Distribution of Missing Value **
 
