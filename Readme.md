@@ -32,8 +32,6 @@ During the initial data audit, critical missing records were identified across t
 
 Fig1: Distribution of Missing Value
 
-
-
 **The Footprint:** This data choice left highly distinct, non-organic structural footprints within final distributions, specifically a sharp, synthetic spike at the **£26 fare amount** and a dominant vertical column at the **100-minute mark for trip durations**. Identifying these artifacts ensures that data engineering decisions are cleanly decoupled from organic consumer behaviour.
 
 ### 2. Feature Engineering: The 'Route' Metric
@@ -57,7 +55,7 @@ MetroMove is heavily under-utilising its highest-capacity infrastructure. The ne
 
 ![Passenger Capacity Distribution Per Trip](images/boxplot.png)
 
-Fig. 3 : Passenger Capacity Distribution Per Trip
+Fig. 3: Passenger Capacity Distribution Per Trip
 
 ### 3. Weekly Revenue Distribution by Transport Mode
 The multivariate visualisation shows that **Buses dominate as the network’s primary financial engine**, pulling in the highest total revenue and daily passenger preference. **Ferries** provide a steady, highly reliable secondary stream of income. However, Trams consistently generate the lowest revenue across the entire week.
@@ -66,10 +64,9 @@ The multivariate visualisation shows that **Buses dominate as the network’s pr
 The top 10 route frequency analysis shows that **North Station to the Airport** and **Central to the Airport** are the absolute heaviest corridors. The Airport features in nearly half of the top ten busiest routes, proving it is the network's main economic anchor.
 **Operational Quirk:** The pipeline caught highly anomalous circular loops, such as journeys logged as *Airport-to-Airport* and *Downtown-to-Downtown*. In a public system, these point directly to localized airport shuttles or minor automated data-logging failures where vehicle drivers forgot to reset terminal destinations at the end of a shift.
 
-![Top 10 Most Frequent Transit Routes](images/Top 10 busiest Roads.png)
+![Top 10 Most Frequent Transit Routes](images/Top10busiestRoads.png)
 
 Fig 4: Top 10 Most Frequent Transit Routes
-
 
 ---
 
