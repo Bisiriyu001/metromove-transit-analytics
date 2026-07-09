@@ -28,9 +28,9 @@ Effective transit administration relies on a granular, data-backed understanding
 ### 1. High-Fidelity Data Cleaning
 During the initial data audit, critical missing records were identified across ticket fares, passenger counts and trip lengths. To preserve sample sizes without introducing massive statistical variance, a **systematic median imputation strategy** was deployed. The Missing  value visualisation is shown below.
 
-!['Distribution of Missing Value']('images/MissingvalueEDA.png')
+![Distribution of Missing Value](images/MissingvalueEDA.png)
 
-** Fig1: Distribution of Missing Value **
+**Fig1: Distribution of Missing Value**
 
 
 
@@ -45,13 +45,17 @@ To map transit movement accurately, raw standalone station coordinates were cons
 
 ### 1. Structural Decoupling of the Pricing Matrix (Core Inefficiency)
 The single biggest analytical exposure uncovered by the pairplot grid and correlation matrix ($0.01$, $0.02$, and $-0.04$ coefficients) is that **MetroMove’s pricing structure is completely decoupled from trip characteristics**. 
-Under a sustainable economic model, fare amount should scale alongside fuel consumption, trip times, and vehicle crowding. Instead, the scatter plots resemble random noise; a 15 minute journey can cost identical to a 3-hour journey. This proves the system is operating on rigid flat-rate pricing structures that cause severe revenue leaks on long-haul routes.
+Under a sustainable economic model, fare amount should scale alongside fuel consumption, trip times, and vehicle crowding. Instead, the scatter plots resemble random noise; a 15 minute journey can cost identical to a 3-hour journey. This proves the system is operating on rigid flat-rate pricing structures that cause severe revenue leaks on long-haul routes. The Correlation Matrix is shown in Fig. 2.
+
+![Correlatiom Matrix of Trip metrics](images/metrics.png)
 
 Fig.2: Correlatiom Matrix of Trip metrics
 
 ### 2. Asset Capacity & Demand Mismatch
 While a train or ferry possesses a massively superior physical asset capacity compared to a standard bus, the boxplot analysis reveals that the passenger count distribution per trip is practically uniform across all modes, hovering around a median of **45 to 50 passengers**. 
 MetroMove is heavily under-utilising its highest-capacity infrastructure. The network is moving empty space on its rail and water lines while overworking its bus assets. Furthermore, the upper quartile ($Q_3$) sits at **70 passengers**, meaning 75% of all network operations run well below full volume. Fig.2 illustated the boxplot below.
+
+![Passenger Capacity Distribution Per Trip](images/boxplot.png)
 
 Fig. 3 : Passenger Capacity Distribution Per Trip
 
@@ -61,6 +65,8 @@ The multivariate visualisation shows that **Buses dominate as the network’s pr
 ### 4. Economic Anchors & Logging Anomalies
 The top 10 route frequency analysis shows that **North Station to the Airport** and **Central to the Airport** are the absolute heaviest corridors. The Airport features in nearly half of the top ten busiest routes, proving it is the network's main economic anchor.
 **Operational Quirk:** The pipeline caught highly anomalous circular loops, such as journeys logged as *Airport-to-Airport* and *Downtown-to-Downtown*. In a public system, these point directly to localized airport shuttles or minor automated data-logging failures where vehicle drivers forgot to reset terminal destinations at the end of a shift.
+
+![Top 10 Most Frequent Transit Routes](images/boxplot.png)
 
 Fig 4: Top 10 Most Frequent Transit Routes
 
