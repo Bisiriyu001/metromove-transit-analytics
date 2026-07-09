@@ -66,9 +66,10 @@ The multivariate visualisation shows that **Buses dominate as the network’s pr
 The top 10 route frequency analysis shows that **North Station to the Airport** and **Central to the Airport** are the absolute heaviest corridors. The Airport features in nearly half of the top ten busiest routes, proving it is the network's main economic anchor.
 **Operational Quirk:** The pipeline caught highly anomalous circular loops, such as journeys logged as *Airport-to-Airport* and *Downtown-to-Downtown*. In a public system, these point directly to localized airport shuttles or minor automated data-logging failures where vehicle drivers forgot to reset terminal destinations at the end of a shift.
 
-![Top 10 Most Frequent Transit Routes](images/boxplot.png)
+![Top 10 Most Frequent Transit Routes](images/Top 10 busiest Roads.png)
 
 Fig 4: Top 10 Most Frequent Transit Routes
+
 
 ---
 
