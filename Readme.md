@@ -28,9 +28,9 @@ Effective transit administration relies on a granular, data-backed understanding
 ### 1. High-Fidelity Data Cleaning
 During the initial data audit, critical missing records were identified across ticket fares, passenger counts and trip lengths. To preserve sample sizes without introducing massive statistical variance, a **systematic median imputation strategy** was deployed. The Missing  value visualisation is shown below.
 
-![Distribution of Missing Value](images/MissingvalueEDA.png)
+![Distribution of Missing Values](images/MissingvalueEDA.png)
 
-**Fig1: Distribution of Missing Value**
+Fig1: Distribution of Missing Value
 
 
 
