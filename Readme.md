@@ -1,4 +1,12 @@
-# MetroMove Transit Analytics: Optimising Modal Performance & Pricing Frameworks
+# MetroMove Transit Analytics
+
+## Optimising Model Performance & Pricing Frameworks
+
+![header](images/header.png)
+
+**Disclaimer ⚠️:** The datasets and reports provided in this repository are synthetic and do not contain real proprietary, confidential, or sensitive information from any company, institution, or individual. This project is designed specifically to demonstrate end-to-end Python-based Exploratory Data Analysis (EDA) and business intelligence capabilities.
+
+---
 
 ## Project Overview
 This project delivers an end-to-end Exploratory Data Analysis (EDA) and data preprocessing pipeline to evaluate operational efficiencies, passenger usage distributions, and revenue streams for **MetroMove**. 
